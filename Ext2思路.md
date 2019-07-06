@@ -1,5 +1,11 @@
 # EXT2
 
+## main
+
+1. filesystem.txt  
+   对一个文件进行操作,将其初始化、格式化，里面套一个文件系统，存储数据
+2. 仅实现文件系统的功能，涉及到的内核、进程、驱动等等不考虑
+
 ## 功能模块
 
 1. 创建文件 touch
@@ -25,13 +31,13 @@
    i节点位图、逻辑块位图--释放和占用
    <!-- 已经使用的节点总数??? -->
 
-      ```C
-      int free_block();
-      int new_block();
+   ```C
+   int free_block();
+   int new_block();
 
-      void free_inode();
-      void new_inode();   //格式化可能用到???
-      ```  
+   void free_inode();
+   void new_inode();   //格式化可能用到???
+   ```  
 
 2. namei.c
    根据目录名or文件名找到对应i节点  

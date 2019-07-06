@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "./fs.h"
-#include "./operation_fs.h"
+
 
 void help() {
     printf("touch\t     创建文件\n");
@@ -17,7 +17,7 @@ void help() {
 }
 
 int main(int argc,char *argv[]) {
-    // init_fs();
+    init_fs();
 
     char cmd[1024];
     while(1) {
